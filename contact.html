@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Ayan.dev about website projects and portfolio development." />
+  <title>Contact | Ayan.dev</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+  <header>
+ 
+        <a href="index.html" class="brand">
+            <img src="favicon.png" alt="Ayan.dev logo">
+            <span class="brand-name">Ayan<span class="brand-dev">.dev</span></span>
+        </a>
+    <p>Web Design & Development</p>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">
+        <i class="fa-solid fa-house" aria-hidden="true"></i>
+        Home
+      </a>
+
+      <a href="about.html">
+        <i class="fa-solid fa-user" aria-hidden="true"></i>
+        About
+      </a>
+
+      <a href="project.html">
+        <i class="fa-solid fa-code" aria-hidden="true"></i>
+        Projects
+      </a>
+
+      <a href="contact.html"aria-current="page">
+        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+        Contact
+      </a>
+      <button id="theme-toggle" type="button">
+        🌙 Dark Mode
+      </button>
+    </nav>
+   
+  </header>
+  <main>
+    <section>
+      <h2>Let's Discuss Your Project</h2>
+      <p>
+        Need a personal portfolio or a website for your business? Share some
+        details about what you want to build.
+      </p>
+    </section>
+
+
+    <section>
+      <h2>Contact Information</h2>
+      <p>
+        Have a website idea or project in mind?
+        Use the project enquiry form below to share your
+        requirements. You can also explore my work on GitHub.
+      </p>
+      <a href="https://github.com/ayandev-developer" target="_blank" rel="noopener noreferrer">
+        Visit My GitHub Profile
+      </a>
+    </section>
+
+
+    <section>
+      <h2>Project Enquiry</h2>
+
+      <form id="contact-form">
+        <div>
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required />
+        </div>
+
+        <div>
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+        </div>
+
+        <div>
+          <label for="project-type">Type of Project</label>
+          <select id="project-type" name="project_type" required>
+            <option value="">Select a project type</option>
+            <option value="business-website">Business Website</option>
+            <option value="personal-portfolio">Personal Portfolio</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="message">Project Details</label>
+          <textarea id="message" name="message" rows="6" placeholder="Tell me about your project" required></textarea>
+        </div>
+
+        <button type="submit">Send Enquiry</button>
+      </form>
+      <button type="button" id="clear-saved-details">
+        Forget Saved Details
+      </button>
+      <p id="form-status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Ayan.dev. All rights reserved.</p>
+    <a href="https://github.com/ayandev-developer" target="_blank" rel="noopener noreferrer">
+      GitHub Profile
+    </a>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
